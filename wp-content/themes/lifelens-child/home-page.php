@@ -10,29 +10,29 @@ Template Post Type: page
 
 <?php
 
-if( have_rows('content') ):
+if( have_rows('home_page') ):
 
-    while( have_rows('content') ) : the_row();
+    while( have_rows('home_page') ) : the_row();
 
         // get layout
         $layout = get_row_layout();
 
-
         // layout_1
-        if( $layout === 'text' ): ?>
+        if( $layout === 'section1' ): ?>
 
-            <div class="layout-1">
-                <p><?php the_sub_field('colums'); ?></p>
-                <p><?php the_sub_field('text'); ?></p>
-                <p><?php the_sub_field('text_2'); ?></p>
+            <div class="section1">
+                <p><?php the_sub_field('heading'); ?></p>
+                <img src="<?php the_sub_field('image'); ?>">
+                <p><?php the_sub_field('main_text'); ?></p>
             </div>
 
         <?php // layout_2
-        elseif( $layout === 'image' ): ?>
+        elseif( $layout === 'section2' ): ?>
 
-            <div class="layout-2">
-
-                <p><?php the_sub_field('caption'); ?></p>
+            <div class="section2">
+                <p><?php the_sub_field('heading'); ?></p>
+                <img src="<?php the_sub_field('image'); ?>">
+                <p><?php the_sub_field('main_text'); ?></p>
             </div>
 
         <?php endif;

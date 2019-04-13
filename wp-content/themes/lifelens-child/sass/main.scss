@@ -3,6 +3,7 @@
 
 
 //@import "utilities";
+@import "utilities/_fonts.scss";
 
 
 
@@ -11,6 +12,7 @@
 
 
 //@import "layouts";
+@import "layouts/_section1.scss";
 
 
 
@@ -19,3 +21,4 @@
 
 
 //@import "page";
+@import "page/_home.scss";

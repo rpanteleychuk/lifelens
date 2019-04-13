@@ -1,0 +1,10 @@
+.font-heading {
+  font: 300 38px/42px "Open Sans", sans-serif;
+  color: #333;
+  letter-spacing: -0.76px;
+  &-white {
+    font: 300 38px/42px "Open Sans", sans-serif;
+    color: #fff;
+    letter-spacing: -0.76px;
+  }
+}

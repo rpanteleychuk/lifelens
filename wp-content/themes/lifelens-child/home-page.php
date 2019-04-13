@@ -21,10 +21,10 @@ Template Post Type: page
             // layout_1
             if ($layout === 'section1'): ?>
 
-                <div class="section1" style="background-image: url(<?php the_sub_field('image'); ?>);">
+                <div class="section1" style="background: linear-gradient(to top right, rgba(0,0,0, 0),rgba(0,0,0, 80)), url(<?php the_sub_field('image'); ?>) no-repeat center;  background-size: cover;">
                     <div class="page-container">
                         <h3 class="font-heading-white"><?php the_sub_field('heading'); ?></h3>
-                        <p><?php the_sub_field('main_text'); ?></p>
+                        <p class="main-text-font"><?php the_sub_field('main_text'); ?></p>
                         <?php
                         $link = get_sub_field('link');
                         if ($link):
@@ -32,7 +32,7 @@ Template Post Type: page
                             $link_title = $link['title'];
                             $link_target = $link['target'] ? $link['target'] : '_self';
                             ?>
-                            <a class="button" href="<?php echo esc_url($link_url); ?>"
+                            <a class="button-blue" href="<?php echo esc_url($link_url); ?>"
                                target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
                         <?php endif; ?>
                     </div>

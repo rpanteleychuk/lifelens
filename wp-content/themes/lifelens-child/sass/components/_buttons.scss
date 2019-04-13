@@ -1,0 +1,12 @@
+.button-blue {
+  font: 400 15px/35px "Barlow", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  background-color: #00a4e4;
+  padding: 15px;
+  &:hover {
+    color: #00a4e4;
+    background-color: #fff;
+  }
+}

@@ -88,10 +88,21 @@ Template Post Type: page
                                 </div>
 
 
-<!--            --><?php //// layout_4
-//            elseif ($layout === 'section4'): ?>
+            <?php // layout_4
+            elseif ($layout === 'section4'): ?>
+
+                <div class="section4">
+                    <div class="page-container">
+                        <h3 class="font-heading text-grey"><?php the_sub_field('heading'); ?></h3>
+                    </div>
+                </div>
+
+
+
+<!--            --><?php //// layout_5
+//            elseif ($layout === 'section5'): ?>
 <!---->
-<!--                <div class="section2">-->
+<!--                <div class="section5">-->
 <!--                    <p>--><?php //the_sub_field('heading'); ?><!--</p>-->
 <!--                    <img src="--><?php //the_sub_field('image'); ?><!--">-->
 <!--                    <p>--><?php //the_sub_field('main_text'); ?><!--</p>-->

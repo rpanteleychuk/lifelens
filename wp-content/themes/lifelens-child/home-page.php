@@ -103,7 +103,6 @@ Template Post Type: page
             elseif ($layout === 'section5'): ?>
 
                 <div class="section5">
-
                         <?php
 
                         $images = get_sub_field('image_gallery'); // (thumbnail, medium, large, full or custom size)
@@ -120,8 +119,9 @@ Template Post Type: page
                                 <?php endforeach; ?>
                             </ul>
                         <?php endif; ?>
-
                 </div>
+
+
 
 
                 <!--            --><?php //// layout_6

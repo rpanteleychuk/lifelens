@@ -44,7 +44,7 @@ Template Post Type: page
             elseif ($layout === 'section2'): ?>
 
                 <div class="section2">
-                    <div class="page-container">
+                    <div class="page-container section2-container">
                         <p class="section2-font text-white"><?php the_sub_field('white_text'); ?><span
                                     class="text-light-green"><?php the_sub_field('green_text'); ?></span></p>
                         <div>
@@ -64,14 +64,34 @@ Template Post Type: page
                 </div>
 
 
-                <!--            --><?php //// layout_3
-//            elseif ($layout === 'section2'): ?>
-                <!---->
-                <!--                <div class="section2">-->
-                <!--                    <p>--><?php //the_sub_field('heading'); ?><!--</p>-->
-                <!--                    <img src="--><?php //the_sub_field('image'); ?><!--">-->
-                <!--                    <p>--><?php //the_sub_field('main_text'); ?><!--</p>-->
-                <!--                </div>-->
+                            <?php // layout_3
+            elseif ($layout === 'section3'): ?>
+
+                                <div class="section3">
+                                    <div class="pac-container">
+                                        <p><?php the_sub_field('heading'); ?></p>
+                                        <p><?php the_sub_field('main_text'); ?></p>
+                                        <?php
+
+                                        $image = get_sub_field('image');
+
+                                        if( !empty($image) ): ?>
+
+                                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+
+
+<!--            --><?php //// layout_4
+//            elseif ($layout === 'section4'): ?>
+<!---->
+<!--                <div class="section2">-->
+<!--                    <p>--><?php //the_sub_field('heading'); ?><!--</p>-->
+<!--                    <img src="--><?php //the_sub_field('image'); ?><!--">-->
+<!--                    <p>--><?php //the_sub_field('main_text'); ?><!--</p>-->
+<!--                </div>-->
 
 
             <?php endif;

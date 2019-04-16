@@ -1,18 +1,30 @@
 .font-heading {
   font: 300 38px/42px "Open Sans", sans-serif;
-  color: #333;
   letter-spacing: -0.76px;
-  &-white {
-    font: 300 38px/42px "Open Sans", sans-serif;
-    color: #fff;
-    letter-spacing: -0.76px;
-  }
 }
 
 .main-text-font {
-  /* Style for "Gain cryst" */
   font: 400 27px/40px "Barlow", sans-serif;
-  color: #ffffff;
+  color: #fff;
   letter-spacing: -0.27px;
 }
+
+.section2-font {
+  font: 500 28px/45px "Barlow", sans-serif;
+  letter-spacing: -0.28px;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-grey {
+  color: #333;
+}
+
+.text-light-green {
+  color: #cbe4b3;
+}
+
+
 

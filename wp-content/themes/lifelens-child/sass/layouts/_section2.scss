@@ -1,0 +1,14 @@
+.section2 {
+  background-color: #294b09;
+  padding: 48px 0 48px 0;
+  .page-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  p {
+    max-width: 814px;
+  }
+}

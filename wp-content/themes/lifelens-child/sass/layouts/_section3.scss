@@ -1,0 +1,18 @@
+.section3 {
+  background-color: #488122;
+  padding-top: 37px;
+  padding-bottom: 57px;
+  .section3-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  h3 {
+    max-width: 580px;
+  }
+  p {
+    max-width: 580px;
+  }
+}

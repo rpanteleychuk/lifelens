@@ -144,6 +144,18 @@ Template Post Type: page
 
 
 
+            <?php // layout_6
+            elseif ($layout === 'section6'): ?>
+
+                <div class="section5">
+                    <p><?php the_sub_field('heading'); ?></p>
+                    <img src="<?php the_sub_field('image'); ?>">
+                    <p><?php the_sub_field('main_text'); ?></p>
+                </div>
+
+
+
+
 <!--            --><?php //// layout_6
 //            elseif ($layout === 'section6'): ?>
 <!---->

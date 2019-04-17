@@ -89,6 +89,7 @@ Template Post Type: page
                 </div>
 
 
+
             <?php // layout_4
             elseif ($layout === 'section4'): ?>
 
@@ -129,15 +130,28 @@ Template Post Type: page
                 </div>
 
 
+            <?php // layout_5
+            elseif ($layout === 'section5'): ?>
 
-                <!--            --><?php //// layout_6
+                                <div class="section5">
+                                    <div class="page-container">
+                                        <h3 class="font-heading text-grey text-center"><?php the_sub_field('heading'); ?></h3>
+                                        <?php echo do_shortcode('[slide-anything id="191"]'); ?>
+                                    </div>
+                                </div>
+
+
+
+
+
+<!--            --><?php //// layout_6
 //            elseif ($layout === 'section6'): ?>
-                <!---->
-                <!--                <div class="section5">-->
-                <!--                    <p>--><?php //the_sub_field('heading'); ?><!--</p>-->
-                <!--                    <img src="--><?php //the_sub_field('image'); ?><!--">-->
-                <!--                    <p>--><?php //the_sub_field('main_text'); ?><!--</p>-->
-                <!--                </div>-->
+<!---->
+<!--                <div class="section5">-->
+<!--                    <p>--><?php //the_sub_field('heading'); ?><!--</p>-->
+<!--                    <img src="--><?php //the_sub_field('image'); ?><!--">-->
+<!--                    <p>--><?php //the_sub_field('main_text'); ?><!--</p>-->
+<!--                </div>-->
 
 
             <?php endif;
@@ -149,6 +163,8 @@ Template Post Type: page
     ?>
 
 </div>
+
+
 
 
 

@@ -1,3 +1,30 @@
 .section4 {
-  text-align: center;
+  h3 {
+    text-align: center;
+  }
+  .img-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  .holder{
+    position:relative;
+  }
+  .block{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    background:rgba(0,164,228, 0.7);
+    padding: 0 33px;
+    display:none;
+  }
+  .holder:hover .block{
+    display:block;
+  }
+
 }
+

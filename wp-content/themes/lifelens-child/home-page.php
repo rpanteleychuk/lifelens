@@ -93,17 +93,40 @@ Template Post Type: page
             elseif ($layout === 'section4'): ?>
 
                 <div class="section4">
-                    <div class="page-container">
+                    <div>
                         <h3 class="font-heading text-grey"><?php the_sub_field('heading'); ?></h3>
+
+                        <?php if (have_rows('gallery')): ?>
+
+                            <div class="img-gallery">
+
+                                <?php while (have_rows('gallery')): the_row();
+
+                                    // vars
+                                    $image = get_sub_field('image');
+                                    $heading = get_sub_field('heading');
+                                    $text = get_sub_field('text');
+
+                                    ?>
+
+                                    <div class="holder">
+                                        <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"/>
+
+                                        <div class="block">
+                                            <h4 class="gallery-head-font text-white text-center"><?php echo $heading; ?></h4>
+                                            <p class="gallery-font text-white"><?php echo $text; ?></p>
+                                        </div>
+
+                                    </div>
+
+                                <?php endwhile; ?>
+
+                            </div>
+
+                        <?php endif; ?>
+
                     </div>
                 </div>
-
-
-
-
-
-
-
 
 
                 <!--            --><?php //// layout_6

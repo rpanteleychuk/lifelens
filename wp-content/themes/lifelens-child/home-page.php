@@ -99,27 +99,9 @@ Template Post Type: page
                 </div>
 
 
-            <?php // layout_5
-            elseif ($layout === 'section5'): ?>
 
-                <div class="section5">
-                        <?php
 
-                        $images = get_sub_field('image_gallery'); // (thumbnail, medium, large, full or custom size)
 
-                        if( $images ): ?>
-                            <ul>
-                                <?php foreach( $images as $image ): ?>
-                                    <li>
-                                        <a href="<?php echo $image['url']; ?>">
-                                            <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
-                                        </a>
-                                        <p><?php echo $image['caption']; ?></p>
-                                    </li>
-                                <?php endforeach; ?>
-                            </ul>
-                        <?php endif; ?>
-                </div>
 
 
 

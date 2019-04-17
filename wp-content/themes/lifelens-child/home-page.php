@@ -129,6 +129,7 @@ Template Post Type: page
                 </div>
 
 
+
                 <!--            --><?php //// layout_6
 //            elseif ($layout === 'section6'): ?>
                 <!---->
@@ -148,5 +149,7 @@ Template Post Type: page
     ?>
 
 </div>
+
+
 
 <?php get_footer(); ?>

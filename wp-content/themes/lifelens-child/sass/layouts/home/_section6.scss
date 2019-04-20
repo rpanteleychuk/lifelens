@@ -59,14 +59,15 @@
   }
 
   .tab button:hover {
-    background-color: #00a4e4;
-    color: #fff;
+    color: #00a4e4;
+    transition: 0.5s;
   }
 
 
   .tab button.active {
     background-color: #00a4e4;
     color: #fff;
+    transition: 0.5s;
   }
 
 

@@ -24,10 +24,13 @@ Template Post Type: page
                     <h3 class="font-heading text-white text-center"><?php the_sub_field('page_name'); ?></h3>
                 </div>
 
+
             <?php // layout_2
             elseif ($layout === 'section_2'): ?>
                 <?php if (have_rows('faq_block')): ?>
                     <div class="faq-section2">
+
+
                     <?php while (have_rows('faq_block')): the_row();
 
                         // vars
@@ -45,6 +48,22 @@ Template Post Type: page
 
                     <?php endwhile; ?>
                 <?php endif; ?>
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                            } else {
+                                panel.style.display = "block";
+                            }
+                        });
+                    }
+                </script>
                 </div>
 
             <?php endif;

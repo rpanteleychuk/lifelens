@@ -58,7 +58,7 @@ gulp.task('scripts', function () {
         .pipe(sourcemaps.init())
         .pipe(babel({compact: true}))
         .pipe(rename({suffix: '.min'}))
-        // .pipe(uglify())
+        .pipe(uglify())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./assets/js/'))
 })

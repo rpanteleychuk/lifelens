@@ -176,9 +176,9 @@ Template Post Type: page
 
                                         <?php endif; ?>
                                     </div>
-                                    <div class="card text-center">
+                                    <div class="card">
                                         <div class="card-header">
-                                            <h5 class="card-title"><p><?php the_sub_field('card_header_1'); ?></p></h5>
+                                            <h5 class="card-title"><?php the_sub_field('card_header_1'); ?></h5>
                                         </div>
                                         <div class="card-body">
                                             <p class="card-text"><?php the_sub_field('card_content_1'); ?></p>
@@ -198,9 +198,9 @@ Template Post Type: page
 
                                         <?php endif; ?>
                                     </div>
-                                    <div class="card text-center">
+                                    <div class="card">
                                         <div class="card-header">
-                                            <h5 class="card-title"><p><?php the_sub_field('card_header_2'); ?></p></h5>
+                                            <h5 class="card-title"><?php the_sub_field('card_header_2'); ?></h5>
                                         </div>
                                         <div class="card-body">
                                             <p class="card-text"><?php the_sub_field('card_content_2'); ?></p>
@@ -220,9 +220,9 @@ Template Post Type: page
 
                                         <?php endif; ?>
                                     </div>
-                                    <div class="card text-center">
+                                    <div class="card">
                                         <div class="card-header">
-                                            <h5 class="card-title"><p><?php the_sub_field('card_header_3'); ?></p></h5>
+                                            <h5 class="card-title"><?php the_sub_field('card_header_3'); ?></h5>
                                         </div>
                                         <div class="card-body">
                                             <p class="card-text"><?php the_sub_field('card_content_3'); ?></p>
@@ -242,9 +242,9 @@ Template Post Type: page
 
                                         <?php endif; ?>
                                     </div>
-                                    <div class="card text-center">
+                                    <div class="card">
                                         <div class="card-header">
-                                            <h5 class="card-title"><p><?php the_sub_field('card_header_4'); ?></p></h5>
+                                            <h5 class="card-title"><?php the_sub_field('card_header_4'); ?></h5>
                                         </div>
                                         <div class="card-body">
                                             <p class="card-text"><?php the_sub_field('card_content_4'); ?></p>

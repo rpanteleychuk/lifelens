@@ -3,6 +3,7 @@
   .flex-content {
     display: flex;
     justify-content: center;
+
   }
 
   .tabcontent {
@@ -10,7 +11,8 @@
     justify-content: center;
     flex-direction: column;
     .card {
-      padding: 0 90px;
+      max-width: 70%;
+      margin: 0 auto;
     }
 
     h5 {

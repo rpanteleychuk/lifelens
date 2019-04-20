@@ -3,12 +3,12 @@
   padding: 24px 0;
   .d-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
   }
   .content-block {
-    max-width: 50%;
+    max-width: 540px;
   }
   .link-block a {
     margin: 25px 0 25px;

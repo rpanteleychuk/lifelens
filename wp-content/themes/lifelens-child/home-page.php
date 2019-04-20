@@ -89,7 +89,6 @@ Template Post Type: page
                 </div>
 
 
-
             <?php // layout_4
             elseif ($layout === 'section4'): ?>
 
@@ -111,7 +110,8 @@ Template Post Type: page
                                     ?>
 
                                     <div class="holder">
-                                        <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>"/>
+                                        <img class="img-responsive" src="<?php echo $image['url']; ?>"
+                                             alt="<?php echo $image['alt'] ?>"/>
 
                                         <div class="block">
                                             <h4 class="gallery-head-font text-white text-center"><?php echo $heading; ?></h4>
@@ -133,15 +133,12 @@ Template Post Type: page
             <?php // layout_5
             elseif ($layout === 'section5'): ?>
 
-                                <div class="section5">
-                                    <div class="page-container">
-                                        <h3 class="font-heading text-grey text-center"><?php the_sub_field('heading'); ?></h3>
-                                        <?php echo do_shortcode('[slide-anything id="191"]'); ?>
-                                    </div>
-                                </div>
-
-
-
+                <div class="section5">
+                    <div class="page-container">
+                        <h3 class="font-heading text-grey text-center"><?php the_sub_field('heading'); ?></h3>
+                        <?php echo do_shortcode('[slide-anything id="191"]'); ?>
+                    </div>
+                </div>
 
 
             <?php // layout_6
@@ -155,11 +152,13 @@ Template Post Type: page
                         <div class="flex-content tab">
                             <div class="left-button-field">
                                 <div>
-                                    <button class="tablinks active" onclick="openTab(event, 'questionnare')"><?php the_sub_field('button_1'); ?></button>
+                                    <button class="tablinks active"
+                                            onclick="openTab(event, 'questionnare')"><?php the_sub_field('button_1'); ?></button>
 
                                 </div>
                                 <div>
-                                    <button class="tablinks" onclick="openTab(event, 'dashboard')"><?php the_sub_field('button_2'); ?></button>
+                                    <button class="tablinks"
+                                            onclick="openTab(event, 'dashboard')"><?php the_sub_field('button_2'); ?></button>
                                 </div>
                             </div>
 
@@ -170,9 +169,10 @@ Template Post Type: page
 
                                         $image = get_sub_field('image_1');
 
-                                        if( !empty($image) ): ?>
+                                        if (!empty($image)): ?>
 
-                                            <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                            <img class="img-responsive" src="<?php echo $image['url']; ?>"
+                                                 alt="<?php echo $image['alt']; ?>"/>
 
                                         <?php endif; ?>
                                     </div>
@@ -192,9 +192,10 @@ Template Post Type: page
 
                                         $image = get_sub_field('image_2');
 
-                                        if( !empty($image) ): ?>
+                                        if (!empty($image)): ?>
 
-                                            <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                            <img class="img-responsive" src="<?php echo $image['url']; ?>"
+                                                 alt="<?php echo $image['alt']; ?>"/>
 
                                         <?php endif; ?>
                                     </div>
@@ -214,9 +215,10 @@ Template Post Type: page
 
                                         $image = get_sub_field('image_3');
 
-                                        if( !empty($image) ): ?>
+                                        if (!empty($image)): ?>
 
-                                            <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                            <img class="img-responsive" src="<?php echo $image['url']; ?>"
+                                                 alt="<?php echo $image['alt']; ?>"/>
 
                                         <?php endif; ?>
                                     </div>
@@ -236,9 +238,10 @@ Template Post Type: page
 
                                         $image = get_sub_field('image_4');
 
-                                        if( !empty($image) ): ?>
+                                        if (!empty($image)): ?>
 
-                                            <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                            <img class="img-responsive" src="<?php echo $image['url']; ?>"
+                                                 alt="<?php echo $image['alt']; ?>"/>
 
                                         <?php endif; ?>
                                     </div>
@@ -256,10 +259,12 @@ Template Post Type: page
 
                             <div class="right-button-field">
                                 <div>
-                                    <button class="tablinks" onclick="openTab(event, 'reporting')"><?php the_sub_field('button_3'); ?></button>
+                                    <button class="tablinks"
+                                            onclick="openTab(event, 'reporting')"><?php the_sub_field('button_3'); ?></button>
                                 </div>
                                 <div>
-                                    <button class="tablinks" onclick="openTab(event, 'future')"><?php the_sub_field('button_4'); ?></button>
+                                    <button class="tablinks"
+                                            onclick="openTab(event, 'future')"><?php the_sub_field('button_4'); ?></button>
                                 </div>
                             </div>
                         </div>
@@ -280,8 +285,6 @@ Template Post Type: page
                 </div>
 
 
-
-
             <?php // layout_7
             elseif ($layout === 'section7'): ?>
 
@@ -292,9 +295,10 @@ Template Post Type: page
 
                             $image = get_sub_field('image');
 
-                            if( !empty($image) ): ?>
+                            if (!empty($image)): ?>
 
-                                <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                <img class="img-responsive" src="<?php echo $image['url']; ?>"
+                                     alt="<?php echo $image['alt']; ?>"/>
 
                             <?php endif; ?>
                         </div>
@@ -317,7 +321,7 @@ Template Post Type: page
                             </div>
                             <div>
                                 <?php
-                                $link = get_sub_field('link_1');
+                                $link = get_sub_field('link_2');
                                 if ($link):
                                     $link_url = $link['url'];
                                     $link_title = $link['title'];
@@ -330,8 +334,6 @@ Template Post Type: page
                         </div>
                     </div>
                 </div>
-
-
 
 
             <?php // layout_8
@@ -349,9 +351,10 @@ Template Post Type: page
 
                                 $image = get_sub_field('image');
 
-                                if( !empty($image) ): ?>
+                                if (!empty($image)): ?>
 
-                                    <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                    <img class="img-responsive" src="<?php echo $image['url']; ?>"
+                                         alt="<?php echo $image['alt']; ?>"/>
 
                                 <?php endif; ?>
                             </div>
@@ -370,9 +373,10 @@ Template Post Type: page
 
                             $image = get_sub_field('image');
 
-                            if( !empty($image) ): ?>
+                            if (!empty($image)): ?>
 
-                                <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                <img class="img-responsive" src="<?php echo $image['url']; ?>"
+                                     alt="<?php echo $image['alt']; ?>"/>
 
                             <?php endif; ?>
                         </div>
@@ -384,14 +388,14 @@ Template Post Type: page
                 </div>
 
 
-<!--            --><?php //// layout_8
+                <!--            --><?php //// layout_8
 //            elseif ($layout === 'section8'): ?>
-<!---->
-<!--                <div class="section8">-->
-<!--                    <p>--><?php //the_sub_field('heading'); ?><!--</p>-->
-<!--                    <img src="--><?php //the_sub_field('image'); ?><!--">-->
-<!--                    <p>--><?php //the_sub_field('main_text'); ?><!--</p>-->
-<!--                </div>-->
+                <!---->
+                <!--                <div class="section8">-->
+                <!--                    <p>--><?php //the_sub_field('heading'); ?><!--</p>-->
+                <!--                    <img src="--><?php //the_sub_field('image'); ?><!--">-->
+                <!--                    <p>--><?php //the_sub_field('main_text'); ?><!--</p>-->
+                <!--                </div>-->
 
 
             <?php endif;
@@ -403,9 +407,6 @@ Template Post Type: page
     ?>
 
 </div>
-
-
-
 
 
 <?php get_footer(); ?>

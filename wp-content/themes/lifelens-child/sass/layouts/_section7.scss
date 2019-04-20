@@ -1,0 +1,17 @@
+.section7 {
+  background-color: #f2f2f2;
+  padding: 24px 0;
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .content-block {
+    max-width: 50%;
+  }
+  .link-block a {
+    margin: 25px 0 25px;
+    display: block;
+  }
+}

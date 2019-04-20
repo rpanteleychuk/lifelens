@@ -286,9 +286,49 @@ Template Post Type: page
             elseif ($layout === 'section7'): ?>
 
                 <div class="section7">
-                    <p><?php the_sub_field('heading'); ?></p>
-                    <img src="<?php the_sub_field('image'); ?>">
-                    <p><?php the_sub_field('main_text'); ?></p>
+                    <div class="page-container d-flex">
+                        <div class="img-block">
+                            <?php
+
+                            $image = get_sub_field('image');
+
+                            if( !empty($image) ): ?>
+
+                                <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                            <?php endif; ?>
+                        </div>
+                        <div class="content-block">
+                            <h3 class="font-heading text-grey"><?php the_sub_field('heading'); ?></h3>
+                            <p class="section7-font"><?php the_sub_field('text'); ?></p>
+                        </div>
+                        <div class="link-block">
+                            <div>
+                                <?php
+                                $link = get_sub_field('link_1');
+                                if ($link):
+                                    $link_url = $link['url'];
+                                    $link_title = $link['title'];
+                                    $link_target = $link['target'] ? $link['target'] : '_self';
+                                    ?>
+                                    <a class="button-blue" href="<?php echo esc_url($link_url); ?>"
+                                       target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                                <?php endif; ?>
+                            </div>
+                            <div>
+                                <?php
+                                $link = get_sub_field('link_1');
+                                if ($link):
+                                    $link_url = $link['url'];
+                                    $link_title = $link['title'];
+                                    $link_target = $link['target'] ? $link['target'] : '_self';
+                                    ?>
+                                    <a class="button-blue" href="<?php echo esc_url($link_url); ?>"
+                                       target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 

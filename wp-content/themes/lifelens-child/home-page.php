@@ -151,40 +151,35 @@ Template Post Type: page
                     <div class="page-container">
                         <h3 class="font-heading text-grey text-center"><?php the_sub_field('heading'); ?></h3>
                         <p><?php the_sub_field('text'); ?></p>
-                        <div>
-                            <?php
 
-                            $image = get_sub_field('image');
+                        <div class="">
+                            <div class="right-button-field">
 
-                            if (!empty($image)): ?>
-
-                                <img class="img-responsive" src="<?php echo $image['url']; ?>"
-                                     alt="<?php echo $image['alt']; ?>"/>
-
-                            <?php endif; ?>
-                        </div>
-                        <div class="card">
-                            <div class="card-header">
-                                <h5 class="card-title"><p><?php the_sub_field('card_header'); ?></p></h5>
                             </div>
-                            <div class="card-body">
-                                <p class="card-text"><?php the_sub_field('card_content'); ?></p>
+                            <div class="content-field">
+                                <?php the_sub_field('image_1'); ?>
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title"><p><?php the_sub_field('card_header_1'); ?></p></h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text"><?php the_sub_field('card_content_1'); ?></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="left-button-field">
+
                             </div>
                         </div>
-                        <div>
-                            <?php
-                            $link = get_sub_field('link');
-                            if ($link):
-                                $link_url = $link['url'];
-                                $link_title = $link['title'];
-                                $link_target = $link['target'] ? $link['target'] : '_self';
-                                ?>
-                                <a class="button-blue" href="<?php echo esc_url($link_url); ?>"
-                                   target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
-                            <?php endif; ?>
-                        </div>
+
+
+
+
+
+
+
                     </div>
-
                 </div>
 
 

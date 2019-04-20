@@ -21,7 +21,7 @@ Template Post Type: page
             if ($layout === 'section_1'): ?>
 
                 <div class="faq-section1">
-                    <h3><?php the_sub_field('page_name'); ?></h3>
+                    <h3 class="font-heading text-white text-center"><?php the_sub_field('page_name'); ?></h3>
                 </div>
 
             <?php // layout_2

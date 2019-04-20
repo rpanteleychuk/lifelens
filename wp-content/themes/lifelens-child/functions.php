@@ -9,9 +9,6 @@ function lifelens_child_styles () {
 
     wp_enqueue_script('lifelens-script', get_stylesheet_directory_uri() . '/source-js/main.js');
 
-    wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/source-js/faq.js');
-
-
 }
 
 add_action( 'wp_enqueue_scripts', 'lifelens_child_styles');

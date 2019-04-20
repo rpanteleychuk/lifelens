@@ -388,16 +388,6 @@ Template Post Type: page
                 </div>
 
 
-                <!--            --><?php //// layout_8
-//            elseif ($layout === 'section8'): ?>
-                <!---->
-                <!--                <div class="section8">-->
-                <!--                    <p>--><?php //the_sub_field('heading'); ?><!--</p>-->
-                <!--                    <img src="--><?php //the_sub_field('image'); ?><!--">-->
-                <!--                    <p>--><?php //the_sub_field('main_text'); ?><!--</p>-->
-                <!--                </div>-->
-
-
             <?php endif;
 
         endwhile;

@@ -360,6 +360,29 @@ Template Post Type: page
                 </div>
 
 
+            <?php // layout_9
+            elseif ($layout === 'section9'): ?>
+
+                <div class="section7">
+                    <div class="page-container d-flex">
+                        <div class="img-block">
+                            <?php
+
+                            $image = get_sub_field('image');
+
+                            if( !empty($image) ): ?>
+
+                                <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                            <?php endif; ?>
+                        </div>
+                        <div class="content-block">
+                            <h3 class="font-heading text-grey"><?php the_sub_field('heading'); ?></h3>
+                            <p class="section7-font"><?php the_sub_field('text'); ?></p>
+                        </div>
+                    </div>
+                </div>
+
 
 <!--            --><?php //// layout_8
 //            elseif ($layout === 'section8'): ?>

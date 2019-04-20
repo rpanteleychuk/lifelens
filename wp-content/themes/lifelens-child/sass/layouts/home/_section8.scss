@@ -1,6 +1,6 @@
 .section8 {
   background-color: #65aa19;
-  padding: 45px 0;
+  padding: 33px 0 40px;
   .d-flex {
     display: flex;
     justify-content: space-around;
@@ -10,5 +10,8 @@
   }
   .content-block {
     max-width: 50%;
+  }
+  h3 {
+    margin: 0;
   }
 }

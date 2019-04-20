@@ -152,7 +152,7 @@ Template Post Type: page
                         <h3 class="font-heading text-grey text-center"><?php the_sub_field('heading'); ?></h3>
                         <p class="section6-font text-grey text-center"><?php the_sub_field('text'); ?></p>
 
-                        <div class="flex-content">
+                        <div class="flex-content tab">
                             <div class="left-button-field">
                                 <div>
                                     <button class="tablinks active" onclick="openTab(event, 'questionnare')"><?php the_sub_field('button_1'); ?></button>
@@ -172,11 +172,11 @@ Template Post Type: page
 
                                         if( !empty($image) ): ?>
 
-                                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                            <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
                                         <?php endif; ?>
                                     </div>
-                                    <div class="card">
+                                    <div class="card text-center">
                                         <div class="card-header">
                                             <h5 class="card-title"><p><?php the_sub_field('card_header_1'); ?></p></h5>
                                         </div>
@@ -194,11 +194,11 @@ Template Post Type: page
 
                                         if( !empty($image) ): ?>
 
-                                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                            <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
                                         <?php endif; ?>
                                     </div>
-                                    <div class="card">
+                                    <div class="card text-center">
                                         <div class="card-header">
                                             <h5 class="card-title"><p><?php the_sub_field('card_header_2'); ?></p></h5>
                                         </div>
@@ -216,11 +216,11 @@ Template Post Type: page
 
                                         if( !empty($image) ): ?>
 
-                                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                            <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
                                         <?php endif; ?>
                                     </div>
-                                    <div class="card">
+                                    <div class="card text-center">
                                         <div class="card-header">
                                             <h5 class="card-title"><p><?php the_sub_field('card_header_3'); ?></p></h5>
                                         </div>
@@ -238,11 +238,11 @@ Template Post Type: page
 
                                         if( !empty($image) ): ?>
 
-                                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                            <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
 
                                         <?php endif; ?>
                                     </div>
-                                    <div class="card">
+                                    <div class="card text-center">
                                         <div class="card-header">
                                             <h5 class="card-title"><p><?php the_sub_field('card_header_4'); ?></p></h5>
                                         </div>
@@ -263,42 +263,19 @@ Template Post Type: page
                                 </div>
                             </div>
                         </div>
-<!--<div class="color">-->
-<!--    <!-- Tab links -->-->
-<!--    <div class="tab">-->
-<!--        <button class="tablinks active" onclick="openTab(event, 'questionnare')">QUESTIONNAIRE</button>-->
-<!--        <button class="tablinks" onclick="openTab(event, 'dashboard')">DASHBOARD</button>-->
-<!--        <button class="tablinks" onclick="openTab(event, 'reporting')">REPORTING</button>-->
-<!--        <button class="tablinks" onclick="openTab(event, 'future')">FUTURE</button>-->
-<!--    </div>-->
-<!---->
-<!--    <!-- Tab content -->-->
-<!--    <div id="questionnare" class="tabcontent" style="display: block;">-->
-<!--        <h3>London</h3>-->
-<!--        <p>London is the capital city of England.</p>-->
-<!--    </div>-->
-<!---->
-<!--    <div id="dashboard" class="tabcontent">-->
-<!--        <h3>Paris</h3>-->
-<!--        <p>Paris is the capital of France.</p>-->
-<!--    </div>-->
-<!---->
-<!--    <div id="reporting" class="tabcontent">-->
-<!--        <h3>Tokyo</h3>-->
-<!--        <p>Tokyo is the capital of Japan.</p>-->
-<!--    </div>-->
-<!---->
-<!--    <div id="future" class="tabcontent">-->
-<!--        <h3>Tokyo</h3>-->
-<!--        <p>Tokyo is the capital of Japan.</p>-->
-<!--    </div>-->
-<!--</div>-->
 
-
-
-
-
-
+                        <div class="text-center">
+                            <?php
+                            $link = get_sub_field('link');
+                            if ($link):
+                                $link_url = $link['url'];
+                                $link_title = $link['title'];
+                                $link_target = $link['target'] ? $link['target'] : '_self';
+                                ?>
+                                <a class="button-blue" href="<?php echo esc_url($link_url); ?>"
+                                   target="<?php echo esc_attr($link_target); ?>"><?php echo esc_html($link_title); ?></a>
+                            <?php endif; ?>
+                        </div>
                     </div>
                 </div>
 

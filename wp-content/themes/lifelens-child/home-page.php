@@ -150,7 +150,7 @@ Template Post Type: page
                 <div class="section6">
                     <div class="page-container">
                         <h3 class="font-heading text-grey text-center"><?php the_sub_field('heading'); ?></h3>
-                        <p><?php the_sub_field('text'); ?></p>
+                        <p class="text-center"><?php the_sub_field('text'); ?></p>
 
                         <div class="">
                             <div class="right-button-field">

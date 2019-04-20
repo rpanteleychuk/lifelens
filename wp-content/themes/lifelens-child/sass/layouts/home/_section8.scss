@@ -1,0 +1,14 @@
+.section8 {
+  background-color: #65aa19;
+  padding: 45px 0;
+  .d-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 10%;
+  }
+  .content-block {
+    max-width: 50%;
+  }
+}

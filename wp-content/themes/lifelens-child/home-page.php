@@ -334,6 +334,33 @@ Template Post Type: page
 
 
 
+            <?php // layout_8
+            elseif ($layout === 'section8'): ?>
+
+                <div class="section8">
+                    <div class="page-container">
+                        <div class=" d-flex">
+                            <div class="content-block">
+                                <h3 class="font-heading text-white"><?php the_sub_field('heading'); ?></h3>
+                                <p class="section3-font text-white"><?php the_sub_field('text'); ?></p>
+                            </div>
+                            <div class="img-block">
+                                <?php
+
+                                $image = get_sub_field('image');
+
+                                if( !empty($image) ): ?>
+
+                                    <img class="img-responsive" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
 <!--            --><?php //// layout_8
 //            elseif ($layout === 'section8'): ?>
 <!---->

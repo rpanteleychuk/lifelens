@@ -152,27 +152,147 @@ Template Post Type: page
                         <h3 class="font-heading text-grey text-center"><?php the_sub_field('heading'); ?></h3>
                         <p class="section6-font text-grey text-center"><?php the_sub_field('text'); ?></p>
 
-                        <div class="">
-                            <div class="right-button-field">
+                        <div class="flex-content">
+                            <div class="left-button-field">
+                                <div>
+                                    <button class="tablinks active" onclick="openTab(event, 'questionnare')"><?php the_sub_field('button_1'); ?></button>
 
+                                </div>
+                                <div>
+                                    <button class="tablinks" onclick="openTab(event, 'dashboard')"><?php the_sub_field('button_2'); ?></button>
+                                </div>
                             </div>
+
                             <div class="content-field">
-                                <?php the_sub_field('image_1'); ?>
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h5 class="card-title"><p><?php the_sub_field('card_header_1'); ?></p></h5>
+                                <div id="questionnare" class="tabcontent" style="display: block;">
+                                    <div class="card-img">
+                                        <?php
+
+                                        $image = get_sub_field('image_1');
+
+                                        if( !empty($image) ): ?>
+
+                                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                                        <?php endif; ?>
                                     </div>
-                                    <div class="card-body">
-                                        <p class="card-text"><?php the_sub_field('card_content_1'); ?></p>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title"><p><?php the_sub_field('card_header_1'); ?></p></h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text"><?php the_sub_field('card_content_1'); ?></p>
+                                        </div>
                                     </div>
                                 </div>
 
-                            </div>
-                            <div class="left-button-field">
+                                <div id="dashboard" class="tabcontent">
+                                    <div class="card-img">
+                                        <?php
 
+                                        $image = get_sub_field('image_2');
+
+                                        if( !empty($image) ): ?>
+
+                                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title"><p><?php the_sub_field('card_header_2'); ?></p></h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text"><?php the_sub_field('card_content_2'); ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="reporting" class="tabcontent">
+                                    <div class="card-img">
+                                        <?php
+
+                                        $image = get_sub_field('image_3');
+
+                                        if( !empty($image) ): ?>
+
+                                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title"><p><?php the_sub_field('card_header_3'); ?></p></h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text"><?php the_sub_field('card_content_3'); ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="future" class="tabcontent">
+                                    <div class="card-img">
+                                        <?php
+
+                                        $image = get_sub_field('image_4');
+
+                                        if( !empty($image) ): ?>
+
+                                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="card-title"><p><?php the_sub_field('card_header_4'); ?></p></h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text"><?php the_sub_field('card_content_4'); ?></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="right-button-field">
+                                <div>
+                                    <button class="tablinks" onclick="openTab(event, 'reporting')"><?php the_sub_field('button_3'); ?></button>
+                                </div>
+                                <div>
+                                    <button class="tablinks" onclick="openTab(event, 'future')"><?php the_sub_field('button_4'); ?></button>
+                                </div>
                             </div>
                         </div>
-
+<!--<div class="color">-->
+<!--    <!-- Tab links -->-->
+<!--    <div class="tab">-->
+<!--        <button class="tablinks active" onclick="openTab(event, 'questionnare')">QUESTIONNAIRE</button>-->
+<!--        <button class="tablinks" onclick="openTab(event, 'dashboard')">DASHBOARD</button>-->
+<!--        <button class="tablinks" onclick="openTab(event, 'reporting')">REPORTING</button>-->
+<!--        <button class="tablinks" onclick="openTab(event, 'future')">FUTURE</button>-->
+<!--    </div>-->
+<!---->
+<!--    <!-- Tab content -->-->
+<!--    <div id="questionnare" class="tabcontent" style="display: block;">-->
+<!--        <h3>London</h3>-->
+<!--        <p>London is the capital city of England.</p>-->
+<!--    </div>-->
+<!---->
+<!--    <div id="dashboard" class="tabcontent">-->
+<!--        <h3>Paris</h3>-->
+<!--        <p>Paris is the capital of France.</p>-->
+<!--    </div>-->
+<!---->
+<!--    <div id="reporting" class="tabcontent">-->
+<!--        <h3>Tokyo</h3>-->
+<!--        <p>Tokyo is the capital of Japan.</p>-->
+<!--    </div>-->
+<!---->
+<!--    <div id="future" class="tabcontent">-->
+<!--        <h3>Tokyo</h3>-->
+<!--        <p>Tokyo is the capital of Japan.</p>-->
+<!--    </div>-->
+<!--</div>-->
 
 
 

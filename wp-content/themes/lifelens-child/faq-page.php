@@ -25,10 +25,26 @@ Template Post Type: page
                 </div>
 
             <?php // layout_2
-            elseif ($layout === 'layout_2'): ?>
+            elseif ($layout === 'section_2'): ?>
+                <?php if (have_rows('faq_block')): ?>
+                    <div class="faq-section2">
+                    <?php while (have_rows('faq_block')): the_row();
 
-                <div class="faq-section2">
-                    <p><?php the_sub_field('sub_field_2'); ?></p>
+                        // vars
+
+                        $question = get_sub_field('question');
+                        $answer = get_sub_field('answer');
+
+                        ?>
+
+
+                        <button class="accordion"><?php echo $question; ?></button>
+                        <div class="panel">
+                            <p><?php echo $answer; ?></p>
+                        </div>
+
+                    <?php endwhile; ?>
+                <?php endif; ?>
                 </div>
 
             <?php endif;

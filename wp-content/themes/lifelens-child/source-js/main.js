@@ -1,6 +1,6 @@
 function openTab(evt, tabName) {
     // Declare all variables
-    let i, tabcontent, tablinks;
+    var i, tabcontent, tablinks;
 
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -19,8 +19,20 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
+var acc = document.getElementsByClassName("accordion");
+var x;
 
-
+for (x = 0; x < acc.length; x++) {
+    acc[x].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
 
 
 

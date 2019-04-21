@@ -19,6 +19,8 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
+
+
 var acc = document.getElementsByClassName("accordion");
 var x;
 

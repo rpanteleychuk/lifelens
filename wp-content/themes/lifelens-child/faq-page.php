@@ -41,9 +41,9 @@ Template Post Type: page
                         ?>
 
 
-                        <button class="accordion"><?php echo $question; ?></button>
+                        <button class="accordion question-font text-blue"><?php echo $question; ?></button>
                         <div class="panel">
-                            <p><?php echo $answer; ?></p>
+                            <p class="answer-font text-grey"><?php echo $answer; ?></p>
                         </div>
 
                     <?php endwhile; ?>

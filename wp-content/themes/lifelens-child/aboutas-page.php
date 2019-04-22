@@ -23,7 +23,7 @@ Template Post Type: page
             if ($layout === 'section1'): ?>
 
                 <div class="abus-section1">
-                    <h2 class="font-heading text-grey"><?php the_sub_field('heading'); ?></h2>
+                    <h3 class="font-heading text-grey"><?php the_sub_field('heading'); ?></h3>
                     <div class="dflex page-container">
                         <div class="first-block">
                             <h4 class="text-grey semi-bold-font"><?php the_sub_field('heading_block'); ?></h4>
@@ -87,8 +87,11 @@ Template Post Type: page
             <?php // layout_3
             elseif( $layout === 'section3' ): ?>
 
-                <div class="abus-section2">
-                    <p><?php the_sub_field('sub_field_2'); ?></p>
+                <div class="abus-section3">
+                    <h3 class="font-heading text-grey"><?php the_sub_field('heading'); ?></h3>
+                    <div class="page-container">
+
+                    </div>
                 </div>
 
 

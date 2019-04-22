@@ -20,7 +20,6 @@ add_action('wp_enqueue_scripts', 'lifelens_child_scripts');
 
 
 register_nav_menus(array(
-    'top'    => 'header menu',    //Название месторасположения меню в шаблоне
     'bottom' => 'footer menu'      //Название другого месторасположения меню в шаблоне
 ));
 

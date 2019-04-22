@@ -14,6 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+        <?php wp_nav_menu('menu_class=bmenu&theme_location=bottom'); ?>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lifelens' ) ); ?>">
 				<?php

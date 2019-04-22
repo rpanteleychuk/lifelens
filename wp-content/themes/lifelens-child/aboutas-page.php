@@ -64,7 +64,7 @@ Template Post Type: page
             elseif ($layout === 'section2'): ?>
 
                 <div class="abus-section2">
-                    <div class="page-container d-flex">
+                    <div class="d-flex">
                         <div class="img-block">
                             <?php
 
@@ -115,25 +115,28 @@ Template Post Type: page
 
 
             <?php // layout_4
-            elseif( $layout === 'section3' ): ?>
+            elseif( $layout === 'section4' ): ?>
 
                 <div class="abus-section4">
-                    <div class="img-block">
-                        <?php
+                    <div class="d-flex">
+                        <div class="img-block">
+                            <?php
 
-                        $image = get_sub_field('image');
+                            $image = get_sub_field('image');
 
-                        if (!empty($image)): ?>
+                            if (!empty($image)): ?>
 
-                            <img class="img-responsive" src="<?php echo $image['url']; ?>"
-                                 alt="<?php echo $image['alt']; ?>"/>
+                                <img class="img-responsive" src="<?php echo $image['url']; ?>"
+                                     alt="<?php echo $image['alt']; ?>"/>
 
-                        <?php endif; ?>
+                            <?php endif; ?>
+                        </div>
+                        <div class="text-block">
+                            <h3 class="text-grey font-heading"><?php the_sub_field('heading'); ?></h3>
+                            <p class="text-grey section-4-font"><?php the_sub_field('text'); ?></p>
+                        </div>
                     </div>
-                    <div class="">
-                        <h3><?php the_sub_field('heading'); ?></h3>
-                        <p><?php the_sub_field('text'); ?></p>
-                    </div>
+
                 </div>
 
 

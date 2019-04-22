@@ -1,3 +1,23 @@
 .abus-section4 {
+  .d-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
+  .img-block {
+    max-width: 640px;
+    img {
+      text-align: right;
+    }
+  }
+  .text-block {
+    background-color: #d4e5e5;
+    max-width: 640px;
+    padding: 30px;
+    h3 {
+      margin: 0 0 36px 0;
+    }
+  }
 }

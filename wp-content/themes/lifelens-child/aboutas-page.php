@@ -23,14 +23,14 @@ Template Post Type: page
             if ($layout === 'section1'): ?>
 
                 <div class="abus-section1">
-                    <h2><?php the_sub_field('heading'); ?></h2>
-                    <div class="dflex">
+                    <h2 class="font-heading text-grey"><?php the_sub_field('heading'); ?></h2>
+                    <div class="dflex page-container">
                         <div class="first-block">
-                            <h4><?php the_sub_field('heading_block'); ?></h4>
-                            <p><?php the_sub_field('text_block'); ?></p>
+                            <h4 class="text-grey semi-bold-font"><?php the_sub_field('heading_block'); ?></h4>
+                            <p class="section3-font"><?php the_sub_field('text_block'); ?></p>
                         </div>
                         <div class="second-block">
-                            <div>
+                            <div class="text-right">
                                 <?php
                                 $link = get_sub_field('link');
                                 if ($link):
@@ -54,7 +54,7 @@ Template Post Type: page
 
                                 <?php endif; ?>
                             </div>
-                            <p><?php the_sub_field('post_image_text'); ?></p>
+                            <p class="text-center text-grey p-about-as-font"><?php the_sub_field('post_image_text'); ?></p>
                         </div>
                     </div>
                 </div>
@@ -63,8 +63,25 @@ Template Post Type: page
             <?php // layout_2
             elseif ($layout === 'section2'): ?>
 
-                <div class="layout-2">
-                    <p><?php the_sub_field('sub_field_2'); ?></p>
+                <div class="abus-section2">
+                    <div class="page-container d-flex">
+                        <div class="img-block">
+                            <?php
+
+                            $image = get_sub_field('image');
+
+                            if (!empty($image)): ?>
+
+                                <img class="img-responsive" src="<?php echo $image['url']; ?>"
+                                     alt="<?php echo $image['alt']; ?>"/>
+
+                            <?php endif; ?>
+                        </div>
+                        <div class="content-block">
+                            <h3 class="semi-bold-font text-grey"><?php the_sub_field('heading'); ?></h3>
+                            <p class="section7-font"><?php the_sub_field('text'); ?></p>
+                        </div>
+                    </div>
                 </div>
 
             <?php endif;

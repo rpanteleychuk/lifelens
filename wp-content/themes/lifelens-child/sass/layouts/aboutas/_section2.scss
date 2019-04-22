@@ -1,0 +1,16 @@
+.abus-section2 {
+  background-color: #51b4bd;
+  padding: 37px 0 40px;
+  .d-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .content-block {
+    max-width: 60%;
+  }
+  h3 {
+    margin: 0;
+  }
+}

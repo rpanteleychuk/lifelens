@@ -50,6 +50,18 @@
   letter-spacing: -0.38px;
 }
 
+.semi-bold-font {
+  font: 500 25px/30px "Barlow", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.p-about-as-font {
+  font: 600 16px/24px "Barlow", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+}
+
 .text-white {
   color: #fff;
 }

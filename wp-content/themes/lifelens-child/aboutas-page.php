@@ -84,6 +84,25 @@ Template Post Type: page
                     </div>
                 </div>
 
+            <?php // layout_3
+            elseif( $layout === 'section3' ): ?>
+
+                <div class="abus-section2">
+                    <p><?php the_sub_field('sub_field_2'); ?></p>
+                </div>
+
+
+
+
+<!--            --><?php //// layout_4
+//            elseif( $layout === 'layout_2' ): ?>
+<!---->
+<!--                <div class="layout-2">-->
+<!--                    <p>--><?php //the_sub_field('sub_field_2'); ?><!--</p>-->
+<!--                </div>-->
+
+
+
             <?php endif;
 
         endwhile;

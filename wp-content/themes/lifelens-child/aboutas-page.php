@@ -79,7 +79,7 @@ Template Post Type: page
                         </div>
                         <div class="content-block">
                             <h3 class="semi-bold-font text-grey"><?php the_sub_field('heading'); ?></h3>
-                            <p class="section7-font"><?php the_sub_field('text'); ?></p>
+                            <p class="text-white section3-font"><?php the_sub_field('text'); ?></p>
                         </div>
                     </div>
                 </div>

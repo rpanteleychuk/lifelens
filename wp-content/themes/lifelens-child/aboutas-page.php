@@ -114,12 +114,27 @@ Template Post Type: page
 
 
 
-<!--            --><?php //// layout_4
-//            elseif( $layout === 'layout_2' ): ?>
-<!---->
-<!--                <div class="layout-2">-->
-<!--                    <p>--><?php //the_sub_field('sub_field_2'); ?><!--</p>-->
-<!--                </div>-->
+            <?php // layout_4
+            elseif( $layout === 'section3' ): ?>
+
+                <div class="abus-section4">
+                    <div class="img-block">
+                        <?php
+
+                        $image = get_sub_field('image');
+
+                        if (!empty($image)): ?>
+
+                            <img class="img-responsive" src="<?php echo $image['url']; ?>"
+                                 alt="<?php echo $image['alt']; ?>"/>
+
+                        <?php endif; ?>
+                    </div>
+                    <div class="">
+                        <h3><?php the_sub_field('heading'); ?></h3>
+                        <p><?php the_sub_field('text'); ?></p>
+                    </div>
+                </div>
 
 
 

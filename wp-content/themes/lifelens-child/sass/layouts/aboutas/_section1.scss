@@ -1,9 +1,10 @@
 .abus-section1 {
   background: linear-gradient(to bottom, #e0e1e2, #fff 36%);
   padding: 25px 0 75px 0;
-  .dflex {
+  .d-flex {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
   h3 {
     text-align: center;
@@ -14,14 +15,16 @@
   }
 
   .first-block {
-    max-width: 45%;
+    max-width: 600px;
     padding: 0 30px 0 0;
   }
   .second-block {
     padding: 0 0 0 30px;
+    max-width: 600px;
   }
   img {
     margin-top: 50px;
     margin-bottom: 50px;
+
   }
 }

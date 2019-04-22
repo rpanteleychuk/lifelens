@@ -24,7 +24,7 @@ Template Post Type: page
 
                 <div class="abus-section1">
                     <h3 class="font-heading text-grey"><?php the_sub_field('heading'); ?></h3>
-                    <div class="dflex page-container">
+                    <div class="d-flex">
                         <div class="first-block">
                             <h4 class="text-grey semi-bold-font"><?php the_sub_field('heading_block'); ?></h4>
                             <p class="section3-font"><?php the_sub_field('text_block'); ?></p>
@@ -64,7 +64,7 @@ Template Post Type: page
             elseif ($layout === 'section2'): ?>
 
                 <div class="abus-section2">
-                    <div class="d-flex">
+                    <div class="d-flex page-container">
                         <div class="img-block">
                             <?php
 

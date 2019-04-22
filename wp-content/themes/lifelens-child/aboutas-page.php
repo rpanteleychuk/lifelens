@@ -89,8 +89,25 @@ Template Post Type: page
 
                 <div class="abus-section3">
                     <h3 class="font-heading text-grey"><?php the_sub_field('heading'); ?></h3>
-                    <div class="page-container">
-
+                    <div class="d-flex page-container">
+                        <div class="count-box">
+                            <p class="count-head-font text-grey text-center"><?php the_sub_field('head_text_1'); ?></p>
+                            <p class="count count-font text-center"><?php the_sub_field('counter_1'); ?></p>
+                            <p class="count-head-font text-grey text-center"><?php the_sub_field('second_head_text_1'); ?></p>
+                            <p class="count-font-box"><?php the_sub_field('counter_text_1'); ?></p>
+                        </div>
+                        <div class="count-box">
+                            <p class="count-head-font text-grey text-center"><?php the_sub_field('head_text_2'); ?></p>
+                            <p class="count count-font text-center"><?php the_sub_field('counter_2'); ?></p>
+                            <p class="count-head-font text-grey text-center"><?php the_sub_field('second_head_text_2'); ?></p>
+                            <p class="count-font-box"><?php the_sub_field('counter_text_2'); ?></p>
+                        </div>
+                        <div class="count-box">
+                            <p class="count-head-font text-grey text-center"><?php the_sub_field('head_text_3'); ?></p>
+                            <p class="count count-font text-center"><?php the_sub_field('counter_3'); ?></p>
+                            <p class="count-head-font text-grey text-center"><?php the_sub_field('second_head_text_3'); ?></p>
+                            <p class="count-font-box"><?php the_sub_field('counter_text_3'); ?></p>
+                        </div>
                     </div>
                 </div>
 

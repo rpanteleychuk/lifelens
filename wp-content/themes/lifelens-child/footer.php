@@ -14,7 +14,12 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-        <?php wp_nav_menu('menu_class=bmenu&theme_location=bottom'); ?>
+
+
+
+        <?php echo do_shortcode('[contact-form-7 id="404" title="Untitled"]'); ?>
+
+
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lifelens' ) ); ?>">
 				<?php

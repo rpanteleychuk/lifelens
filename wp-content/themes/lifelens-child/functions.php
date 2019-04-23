@@ -19,9 +19,7 @@ function lifelens_child_scripts () {
 add_action('wp_enqueue_scripts', 'lifelens_child_scripts');
 
 
-register_nav_menus(array(
-    'bottom' => 'footer menu'      //Название другого месторасположения меню в шаблоне
-));
+
 
 
 

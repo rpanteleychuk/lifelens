@@ -6,5 +6,53 @@
   }
   .d-flex {
     display: flex;
+    justify-content: space-between;
+
+  }
+  h6 {
+    margin: 0;
+    padding: 0;
+    font: 600 16px/35px "Barlow", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: #333333;
+  }
+
+  .footer-first-menu {
+    font: 500 15px/24px "Barlow", sans-serif;
+    color: #666666;
+    letter-spacing: 0.3px;
+    li {
+      margin: 10px 0;
+    }
+    a {
+      padding: 10px 0;
+      &:hover {
+        transition: 0.8s;
+        color: #00a4e4;
+      }
+    }
+
+  }
+
+  .footer-second-menu {
+    font: 500 15px/24px "Barlow", sans-serif;
+    color: #666666;
+    letter-spacing: 0.3px;
+    li {
+      margin: 10px 0;
+    }
+    a {
+      &:hover {
+        transition: 0.8s;
+        color: #00a4e4;
+      }
+      padding: 10px 0;
+    }
+  }
+
+
+  .contact-form {
+
   }
 }

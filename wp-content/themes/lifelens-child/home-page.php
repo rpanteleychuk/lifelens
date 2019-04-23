@@ -366,7 +366,7 @@ Template Post Type: page
             <?php // layout_9
             elseif ($layout === 'section9'): ?>
 
-                <div class="section7">
+                <div class="section9">
                     <div class="page-container d-flex">
                         <div class="img-block">
                             <?php

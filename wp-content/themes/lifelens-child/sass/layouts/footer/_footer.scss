@@ -1,5 +1,6 @@
 .site-footer {
   padding: 20px 10%;
+  background-color: #f2f2f2;
   ul {
     margin: 0;
     padding: 0;
@@ -7,7 +8,6 @@
   .d-flex {
     display: flex;
     justify-content: space-between;
-
   }
   h6 {
     margin: 0;
@@ -51,8 +51,32 @@
     }
   }
 
-
   .contact-form {
+    width: 50%;
+    .wpcf7-text {
+      font: 500 15px/24px "Barlow", sans-serif;
+      min-width: 70%;
+      padding: 10px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+    }
+    form {
+      p {
+        display: inline;
+      }
+      .wpcf7-submit {
+        font: 600 14px/35px "Barlow", sans-serif;
+        margin: 0 0 0 -2px;
+        padding: 5px;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        background-color: #00a4e4;
+        color: #fff;
+        &:hover {
+          transition: 0.8s;
 
+        }
+      }
+    }
   }
 }

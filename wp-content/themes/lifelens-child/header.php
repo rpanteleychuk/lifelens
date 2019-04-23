@@ -29,19 +29,15 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 
-
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
+		<div class="site-branding img-responsive">
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
+
 			endif;
 			$lifelens_description = get_bloginfo( 'description', 'display' );
 			if ( $lifelens_description || is_customize_preview() ) :
@@ -50,7 +46,7 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation main-menu-font">
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',

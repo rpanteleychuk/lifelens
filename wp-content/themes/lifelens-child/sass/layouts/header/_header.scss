@@ -1,0 +1,29 @@
+.site-header {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .menu {
+    margin: 0;
+  }
+  .current-menu-item {
+    color: #00a4e4;
+  }
+
+
+  .main-navigation {
+    li {
+      display: inline-block;
+      a{
+        padding: 15px 15px;
+        margin: 0 10px;
+      }
+      &:hover {
+        transition: 0.8s;
+        color: #00a4e4;
+      }
+
+    }
+
+  }
+}
